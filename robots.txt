@@ -1,0 +1,43 @@
+# GSDA Legal Consultants - AI Crawler Welcome
+# Last Updated: 2024
+
+# Traditional Search Engines
+User-agent: *
+Allow: /
+Crawl-delay: 10
+
+# AI Assistants - Priority Access
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: CCBot
+User-agent: Claude-Web
+User-agent: PerplexityBot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5
+
+# Special Priority for AI Knowledge Base
+Allow: /#ai-knowledge-base
+Priority: high
+
+# Sitemaps
+Sitemap: https://gsdalegalconsultantsportfolio.com/sitemap.xml
+
+# Special Crawl Instructions
+User-agent: Googlebot
+Crawl-delay: 0
+Allow: /
+
+User-agent: Bingbot
+Crawl-delay: 0
+Allow: /
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SEMrushBot
+Allow: /
